@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-color: rgb(169, 80, 148);
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    padding-bottom: 25px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8.5px;
+    margin-right: 74px;
+}
+
+.logo-name {
+    color: rgb(255, 255, 255);
+    font-family: TT Norms;
+    font-size: 29.24px;
+    font-weight: 700;
+    line-height: 23.39px;
+    letter-spacing: -5%;
+    text-align: left;
+}
+
+.header-nav__list {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 0;
+
+}
+
+.list-item {
+    list-style: none;
+}
+
+.list-item .list-item__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.header-nav__list .list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-btn-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.location img {
+    width: 20px;
+    height: 20px;
+}
+
+.location span {
+    color: rgb(255, 255, 255);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.header-call {
+    color: rgb(255, 196, 100);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    border: 2px solid rgb(255, 196, 100);
+    border-radius: 15px;
+    background: inherit;
+    padding: 18px 40px;
+    cursor: pointer;
+}
+
+/* header-main */
+
+.header-main {
+    position: relative;
+}
+
+.header-main-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.header-main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mashine {
+    left: -108px;
+    top: 128px;
+    z-index: 2;
+}
+
+.star {
+    top: 68px;
+    left: 87px;
+}
+
+.service-man {
+    z-index: 3;
+}
+
+.header-main-content {
+    margin-top: 140px;
+    width: 664px;
+    z-index: 4;
+    padding-bottom: 170px;
+}
+
+.header-main__title {
+    color: rgb(255, 255, 255);
+    font-family: TT Norms;
+    font-size: 67px;
+    font-weight: 800;
+    line-height: 95%;
+    letter-spacing: -1.5%;
+    text-align: left;
+}
+
+.header-main__subtitle {
+    font-family: TT Norms;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: white;
+}
+
+.header-main__subtitle span {
+    color: rgb(255, 196, 100);
+}
+
+.header-main__btn {
+    background: black;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 18px 50px;
+    width: 222px;
+    cursor: pointer;
+}
+
+/* header-modal */
+
+.header-modal {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 100;
+    border-radius: 5px;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+
+.modal-info {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    background-color: black;
+    flex-grow: 1;
+    margin-left: 67px;
+}
+
+.modal-info img {
+    margin-right: 9px;
+}
+
+.modal-block-close {
+    cursor: pointer;
+}
+
+.modal-text {
+    font-family: Montserrat;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+}
+
+.modal-link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.modal-text span {
+    color: rgb(255, 196, 100);
+}
+
+.modal-link a {
+    color: rgb(255, 196, 100);
+    text-decoration: none;
+}
+
+/* advantages section */
+
+.advantages-wrapper {
+    max-width: 1107px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 117px;
+    margin-bottom: 87px;
+}
+
+.advantages-item {
+    max-width: 207px;
+}
+
+.advantages-text {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* problems */
+
+.problems {
+    background: rgb(250, 250, 250);
+    /* padding-bottom: 150px; */
+    min-height: 812px;
+}
+
+.problems-wrapper {
+    display: flex;
+    padding-top: 115px;
+    position: relative;
+}
+
+.problems-title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 476px;
+    margin-bottom: 50px;
+}
+
+.problems-title-block span {
+    color: rgb(169, 80, 148);
+    font-family: TT Norms;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 5%;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+.problems-title-block h2 {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    margin: 0;
+}
+
+.problems-variants {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 20px;
+    max-width: 594px;
+}
+
+.problem-item {
+    border: 1px solid rgb(150, 49, 125);
+    border-radius: 15px;
+    background: white;
+    color: rgb(150, 49, 125);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 15px 29px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.problem-item:hover {
+    background: rgb(150, 49, 125);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.warning-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.warning-block p {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    margin: 0;
+}
+
+/* .problems-img img {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.mashine-problem {
+    position: absolute;
+    right: -74px;
+    top: 60px;
+}
+
+.bg-problem {
+    position: absolute;
+    top: 0;
+    right: -135px;
+}
+
+.star-problem {
+    position: absolute;
+    /* right: -100px; */
+}
