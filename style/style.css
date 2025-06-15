@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+/* section {
+    max-width: 1440px;
+    margin: auto;
+} */
+
 .container {
     max-width: 1170px;
     margin: auto;
@@ -379,4 +384,548 @@ header {
 .star-problem {
     position: absolute;
     /* right: -100px; */
+}
+
+
+/* table block */
+
+.table {
+    margin: auto;
+    width: 971px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.table td, th {
+    padding: 25px 0;
+    border-bottom: 1px solid rgb(236, 236, 236);
+
+}
+
+.table caption {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.5%;
+    margin-bottom: 50px;
+    
+}
+
+.price {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: right;
+}
+
+.table-text {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.td-name {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.free {
+   color: rgb(150, 49, 125);
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right; 
+}
+
+.show-more-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    color: rgb(150, 49, 125);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    gap: 10px;
+    background: inherit;
+    cursor: pointer;
+
+}
+
+.table .last-td {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+
+/* personal */
+
+.personal {
+   
+    background: rgb(250, 250, 250);
+}
+
+.personal-block {
+     padding-top: 100px;
+}
+
+.personal-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.personal-subitle {
+    color: rgb(150, 49, 125);
+    font-family: TT Norms;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.personal-title {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+
+}
+
+.personal-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-item {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 60px) / 3);
+    border: 1px dashed rgb(189, 189, 189);
+    border-radius: 15px;
+
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-bottom: 50px;
+}
+
+.person-name {
+
+    /* margin-top: 50px; */
+    margin: 0;
+}
+
+.person-job {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.person-achivs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.achivs-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.achivs-item span {
+    color: rgb(150, 49, 125);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.person-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-bottom: 100px;
+}
+
+.arrow-block {
+    display: flex;
+    gap: 40px;
+}
+
+.arrow-prew:hover img {
+    
+}
+.arrow-next:hover img {
+    
+}
+
+.dots {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(150, 49, 125);
+}
+
+/* .dot:hover {
+    padding: 20px;
+    border: 1px solid ;
+    border-radius: 50%;
+    overflow: hidden;
+} */
+
+
+/* reviews */
+
+.reviews-title {
+    color: rgb(0, 0, 0);
+font-family: TT Norms;
+font-size: 40px;
+font-weight: 700;
+line-height: 130%;
+text-align: center;
+}
+
+.reviews-wrapper {
+    display: flex;
+    gap: 30px;
+
+}
+
+.reviews-item {
+    width: 50%;
+    min-height: 417px;
+    padding: 75px 50px;
+    background: rgb(250, 250, 250);
+}
+
+.author-about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.author-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.author-name {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 22px;
+    font-weight: 500;
+    /* line-height: 28px; */
+}
+
+.review-text {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* raiting */
+
+.raiting-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.raiting-card {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: calc((100% - 60px) / 3);
+    padding: 35px;
+}
+
+.raiting-score {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 28px;
+    border-right: 1px solid rgb(227, 227, 227);
+}
+
+.raiting-now {
+    font-weight: 700;
+    font-size: 35px;
+}
+.raiting-full {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.raiting-company {
+    padding-left: 28px;
+}
+.score-all {
+    color: rgb(0, 0, 0);
+font-family: TT Norms;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+margin-top: 5px;
+}
+
+/* questions */
+
+.accordion-wrapper {
+    display: flex;
+    gap: 106px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.accordion {
+    flex-grow: 1;
+}
+
+.quest-title {
+    max-width: 325px;
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.quest-subtitle {
+    max-width: 301px;
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -5%;
+    text-align: left;
+}
+
+.quest-subtitle a {
+    color: rgb(169, 80, 148);
+}
+
+.element {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px 18px 35px;
+}
+
+.element-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgb(150, 49, 125);
+    border-radius: 50%;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+.summon-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.summon-bg {
+    /* overflow: hidden; */
+    align-self: center;
+    z-index: -1;
+    position: relative;
+}
+
+.summon-content {
+    width: 1341px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 50px;
+    top: 100px;
+    z-index: 10;
+    position: absolute;
+    padding: 50px 84px;
+    background-color: white;
+
+
+}
+
+.summon-title {
+    color: rgb(23, 23, 23);
+    font-family: TT Norms;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -1.5%;
+    text-align: left;
+}
+
+.summon-subtitle {
+    font-family: TT Norms;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.summon-subtitle span {
+    color: rgb(169, 80, 148);
+}
+
+.summon-input {
+    padding: 25px 0 25px 30px;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    color: black;
+    width: 326px;
+    border: 1px solid rgb(245, 245, 245);
+    outline: none;
+}
+
+.summon-btn {
+    background: rgb(169, 80, 148);
+    color: white;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 314px;
+    text-align: center;
+    border: 1px solid rgb(169, 80, 148);
+    cursor: pointer;
+    z-index: 20;
+}
+
+.summon-form-1 {
+    display: flex;
+    gap: 30px;
+}
+
+/* contacts */
+
+.contacts {
+    padding-top: 100px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;  
+    margin-top: 50px; 
+    
+    gap: 10px;
+}
+
+.address {
+    color: rgb(0, 0, 0);
+font-family: TT Norms;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.control-room {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts-title {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.email-adress {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.contacts-btn {
+    padding: 18px 40px;
+    color: rgb(153, 50, 128);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 1px solid rgb(153, 50, 128);
+    border-radius: 15px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
 }
