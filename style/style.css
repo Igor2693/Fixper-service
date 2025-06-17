@@ -277,6 +277,7 @@ header {
     background: rgb(250, 250, 250);
     /* padding-bottom: 150px; */
     min-height: 812px;
+    position: relative;
 }
 
 .problems-wrapper {
@@ -371,14 +372,14 @@ header {
 
 .mashine-problem {
     position: absolute;
-    right: -74px;
-    top: 60px;
+    right: 61px;
+    top: 61px;
 }
 
 .bg-problem {
     position: absolute;
     top: 0;
-    right: -135px;
+    right: 0;
 }
 
 .star-problem {
@@ -776,23 +777,32 @@ th {
 
 /* summon */
 
-/* .summon-master {
-    position: relative;
-} */
+.summon-master {
+    /* position: relative; */
+    max-width: 1440px;
+
+}
 
 .summon-wrapper {
     display: flex;
     flex-direction: column;
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    /* z-index: 1; */
 }
 
-.summon-bg {
+/* .summon-bg {
     /* overflow: hidden; */
-    align-self: center;
-    z-index: -1;
+/* align-self: center; */
+/* z-index: -1; */
+/* position: relative; */
+/* background-size: contain; */
+/* } */
+
+.summon-master {
+    max-width: 1440px;
     position: relative;
-    background-size: contain;
+    min-height: 380px;
+    display: flex;
 }
 
 .summon-bg-img {
@@ -801,20 +811,22 @@ th {
     z-index: -1;
     position: absolute; */
     /* width: 99%; */
-    /* position: absolute; */
-    background-size: cover;
-    max-width: 90rem;
+    position: absolute;
+    background-size: contain;
+    max-width: 100%;
+    min-height: 100%;
+    z-index: -10;
 }
 
 .summon-content {
-    width: 1341px;
+    /* width: 1341px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    left: 50px;
-    top: 100px;
+    /* left: 50px; */
+    /* top: 100px; */
     z-index: 10;
-    position: absolute;
+    /* position: absolute; */
     padding: 50px 84px;
     background-color: white;
 
@@ -1012,4 +1024,33 @@ th {
     padding: 17px 28px;
     background: white;
     border-radius: 10px;
+}
+
+/* Адаптив */
+
+@media (max-width: 1200px) {
+    /* .header-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    } */
+
+    .container {
+        max-width: 65rem;
+    }
+
+    .mashine {
+        max-width: 402px;
+    }
+
+    .service-man {
+        max-width: 720px;
+    }
+
+    .header-main__title {
+        font-size: 54px;
+    }
+
+    .summon-content {
+        padding: 15px 32px;
+    }
 }
