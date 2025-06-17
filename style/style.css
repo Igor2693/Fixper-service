@@ -30,7 +30,7 @@ header {
 .header-logo {
     display: flex;
     align-items: center;
-    gap: 8.5px;
+    gap: 8.5008px;
     margin-right: 74px;
 }
 
@@ -39,7 +39,7 @@ header {
     font-family: TT Norms;
     font-size: 29.24px;
     font-weight: 700;
-    line-height: 23.39px;
+    line-height: 23.3904px;
     letter-spacing: -5%;
     text-align: left;
 }
@@ -396,7 +396,8 @@ header {
     padding-bottom: 100px;
 }
 
-.table td, th {
+.table td,
+th {
     padding: 25px 0;
     border-bottom: 1px solid rgb(236, 236, 236);
 
@@ -410,7 +411,7 @@ header {
     line-height: 40px;
     letter-spacing: -1.5%;
     margin-bottom: 50px;
-    
+
 }
 
 .price {
@@ -443,13 +444,13 @@ header {
 }
 
 .free {
-   color: rgb(150, 49, 125);
+    color: rgb(150, 49, 125);
     font-family: TT Norms;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0%;
-    text-align: right; 
+    text-align: right;
 }
 
 .show-more-btn {
@@ -478,18 +479,19 @@ header {
 /* personal */
 
 .personal {
-   
+
     background: rgb(250, 250, 250);
 }
 
 .personal-block {
-     padding-top: 100px;
+    padding-top: 100px;
 }
 
 .personal-header {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .personal-subitle {
     color: rgb(150, 49, 125);
     font-family: TT Norms;
@@ -558,7 +560,7 @@ header {
     display: flex;
     align-items: center;
     gap: 12px;
-    
+
 }
 
 .achivs-item span {
@@ -584,12 +586,9 @@ header {
     gap: 40px;
 }
 
-.arrow-prew:hover img {
-    
-}
-.arrow-next:hover img {
-    
-}
+.arrow-prew:hover img {}
+
+.arrow-next:hover img {}
 
 .dots {
     padding-left: 10px;
@@ -617,11 +616,11 @@ header {
 
 .reviews-title {
     color: rgb(0, 0, 0);
-font-family: TT Norms;
-font-size: 40px;
-font-weight: 700;
-line-height: 130%;
-text-align: center;
+    font-family: TT Norms;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
 }
 
 .reviews-wrapper {
@@ -696,6 +695,7 @@ text-align: center;
     font-weight: 700;
     font-size: 35px;
 }
+
 .raiting-full {
     font-weight: 500;
     font-size: 25px;
@@ -704,13 +704,14 @@ text-align: center;
 .raiting-company {
     padding-left: 28px;
 }
+
 .score-all {
     color: rgb(0, 0, 0);
-font-family: TT Norms;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-margin-top: 5px;
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 5px;
 }
 
 /* questions */
@@ -752,7 +753,7 @@ margin-top: 5px;
 }
 
 .element {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -769,9 +770,15 @@ margin-top: 5px;
     border-radius: 50%;
 }
 
-.container {
+/* .container {
     border: 1px solid black;
-}
+} */
+
+/* summon */
+
+/* .summon-master {
+    position: relative;
+} */
 
 .summon-wrapper {
     display: flex;
@@ -785,6 +792,18 @@ margin-top: 5px;
     align-self: center;
     z-index: -1;
     position: relative;
+    background-size: contain;
+}
+
+.summon-bg-img {
+    /* max-width: 90rem;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute; */
+    /* width: 99%; */
+    /* position: absolute; */
+    background-size: cover;
+    max-width: 90rem;
 }
 
 .summon-content {
@@ -867,20 +886,20 @@ margin-top: 5px;
 
 .office {
     display: flex;
-    flex-direction: column;  
-    margin-top: 50px; 
-    
+    flex-direction: column;
+    margin-top: 50px;
+
     gap: 10px;
 }
 
 .address {
     color: rgb(0, 0, 0);
-font-family: TT Norms;
-font-size: 18px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .control-room {
@@ -928,4 +947,69 @@ text-align: left;
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
+}
+
+/* footer */
+
+.footer {
+    padding-bottom: 25px;
+}
+
+.footer-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.footer-logo span {
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 29.24px;
+    font-weight: 700;
+    line-height: 23.3904px;
+    letter-spacing: -5%;
+    text-align: left;
+}
+
+.footer-nav-list {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav-item {
+    list-style: none;
+}
+
+.footer-pay {
+    background: rgb(250, 250, 250);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.logo-card {
+    padding: 17px 28px;
+    background: white;
+    border-radius: 10px;
 }
