@@ -1053,4 +1053,20 @@ th {
     .summon-content {
         padding: 15px 32px;
     }
+
+    .raiting-card {
+        padding: 15px;
+    }
+
+    .accordion-wrapper {
+        justify-content: space-between;
+    }
+
+    .contacts-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-info-wrapper {
+        align-items: center;
+    }
 }
