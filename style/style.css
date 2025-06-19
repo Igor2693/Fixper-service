@@ -2,10 +2,47 @@
     box-sizing: border-box;
 }
 
-/* section {
-    max-width: 1440px;
-    margin: auto;
-} */
+.btn-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    /* background: black; */
+}
+.line {
+    background: white;
+    width: 100%;
+    height: 2px;
+    border-radius: 15px;
+}
+.header-logo-mobile {
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+
+
+.header-nav-small__screen {
+    display: none;
+}
+
+.burger-menu {
+     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 100;
+    background-color: #fff;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
 
 .container {
     max-width: 1170px;
@@ -246,6 +283,11 @@ header {
     text-decoration: none;
 }
 
+.modal-text-smallscreen,
+    .modal-link-smallscreen {
+        display: none;
+    }
+
 /* advantages section */
 
 .advantages-wrapper {
@@ -278,6 +320,8 @@ header {
     /* padding-bottom: 150px; */
     min-height: 812px;
     position: relative;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .problems-wrapper {
@@ -780,6 +824,7 @@ th {
 .summon-master {
     /* position: relative; */
     max-width: 1440px;
+    margin: auto;
 
 }
 
@@ -1026,6 +1071,8 @@ th {
     border-radius: 10px;
 }
 
+
+
 /* Адаптив */
 
 @media (max-width: 1200px) {
@@ -1035,17 +1082,28 @@ th {
     } */
 
     .container {
-        max-width: 65rem;
+        max-width: 70rem;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .mashine {
         max-width: 402px;
     }
-
+    .header-nav {
+        justify-content: space-between;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+    .header-logo {
+        margin-right: 30px;
+    }
     .service-man {
         max-width: 720px;
     }
-
+    .modal-info {
+        margin-left: 35px;
+    }
     .header-main__title {
         font-size: 54px;
     }
@@ -1067,6 +1125,187 @@ th {
     }
 
     .contact-info-wrapper {
+        margin-top: 25px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .office {
+        margin-top: 0;
+    }
+
+    .mashine-problem {
+        width: 40%;
+    }
+    .bg-problem {
+        width: 35%;
+    }
+    .problems {
+        min-height: 736px;
+    }
+    .table {
+        padding-bottom: 50px;
+    }
+    .personal-block {
+        padding-top: 50px;
+    }
+    .person-nav {
+        padding-bottom: 30px;
+    }
+    .raiting-now {
+        font-size: 30px;
+    }
+    .raiting-score {
+        padding-right: 15px;
+    }
+    .raiting-company {
+        padding-left: 15px;
+    }
+    .contact-info-wrapper {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 60rem;
+    }
+
+    .header-nav__list .list-item:not(:last-child) {
+    margin-right: 20px;
+    }
+
+    .header-btn-block {
+        gap: 20px;
+    }
+    .header-main__title {
+        font-size: 32px;
+    }
+    .header-main__subtitle {
+        font-size: 16px;
+    }
+    .header-main-content {
+        width: 530px;
+    }
+    .header-main-content {
+        margin-top: 80px;
+    }
+    .service-man {
+        width: 514px;
+    }
+    .mashine {
+        width: 260px;
+    }
+    .modal-text-smallscreen,
+    .modal-link-smallscreen {
+        display: block;
+    }
+   
+    .modal-text-desktop,
+    .modal-link-desktop {
+        display: none;
+    }
+    .advantages-text {
+        font-size: 16px;
+    }
+    .advantages-wrapper {
         align-items: center;
     }
+    .problems-title-block h2 {
+        font-size: 32px;
+    }
+    .problems-variants {
+    column-gap: 10px;
+    row-gap: 12px;
+    max-width: 594px;
+    }
+    .warning-block {
+        margin-top: 25px;
+    }
+    .problems {
+        min-height: 665px;
+    }
+    .table {
+        width: 700px;
+    }
+    .personal-title {
+        font-size: 32px;
+    }
+    .achivs-item span {
+        font-size: 12px;
+    }
+    .reviews-title {
+        font-size: 32px;
+    }
+    .review-text {
+        font-size: 16px;
+        
+    }
+    .reviews-item  {
+        padding-bottom: 50px;
+    }
+    .raiting-wrapper {
+        flex-direction: column;
+    }
+    .raiting-card {
+        width: 350px;
+    }
+    .raiting-score {
+        padding-right: 25px;
+    }
+    .raiting-company {
+        padding-left: 25px;
+    }
+    .problem-item {
+        padding: 10px 15px;
+    }
+    .table caption {
+        font-size: 32px;
+    }
+    .accordion-wrapper {
+        gap: 40px;
+    }
+    .summon-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .summon-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .summon-title {
+        margin: 0;
+    }
+    .summon-master {
+        min-height: 280px;
+    }
+    .contacts {
+        padding-top: 50px;
+    }
+    .contacts-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info-wrapper {
+        flex-direction: column;
+    }
+    .office,
+    .control-room {
+        text-align: center;
+    }
+
+    .header-nav-small__screen {
+        display: flex;
+        align-items: center;
+
+    }
+    .header-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
 }

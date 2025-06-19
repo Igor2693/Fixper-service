@@ -14,6 +14,21 @@
 
     <header>
         <div class="container">
+
+            <div class="header-nav-small__screen">
+                <div class="btn-open">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                   
+                <div class="header-logo-mobile">
+                    <img src="/img/logo.png" alt="logo">
+                    <span class="logo-name"> Fixper</span>
+                </div>
+                
+            </div>
+           
             <!-- header-nav -->
             <div class="header-nav">
                 <div class="header-logo">
@@ -79,13 +94,22 @@
                     </div>
                     <div class="modal-info">
                         <img src="/img/circle.svg" alt="circle-icon">
-                        <p class="modal-text">
+                        <p class="modal-text modal-text-desktop">
                             <span>Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку
                             15%
                         </p>
+                        <p class="modal-text modal-text-smallscreen">
+                            <span>Принимаем заказы до 21:00</span>  звоните и получите скидку
+                        </p>
                     </div>
-                    <div class="modal-link">
+                    <div class="modal-link modal-link-desktop">
                         <a href="#">Получить скидку</a>
+                        <a href="#">
+                            <img src="/img/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                    <div class="modal-link modal-link-smallscreen" >
+                        <a href="#">Получить скидку 15%</a>
                         <a href="#">
                             <img src="/img/arrow.svg" alt="arrow">
                         </a>
@@ -636,6 +660,38 @@
             </div>
         </div>
     </section>
+
+    <!-- Модальное окно header-nav -->
+
+    <div class="burger-menu is-open" style="display: none;">
+        <div class="menu-container">
+            <ul class="header-nav__list">
+                <li class="list-item">
+                    <a href="#" class="list-item__link">Диагностика</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item__link">Стоимость</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item__link">Мастера</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item__link">Отзывы</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item__link">Вопросы</a>
+                </li>
+            </ul>
+            <div class="header-btn-block">
+                <button class="location">
+                    <img src="/img/geo.png" alt="geo">
+                    <span>Москва</span>
+                </button>
+                <button class="header-call">Позвонить</button>
+            </div>
+        </div>
+            </div>
+
 
 </body>
 
