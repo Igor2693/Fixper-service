@@ -171,11 +171,15 @@
     <!-- problems -->
 
     <section class="problems">
-        <img src="/img/background-problem.png" alt="bg" class="bg-problem">
-        <img src="/img/mashine-problem.png" alt="mashine" class="mashine-problem">
+        <img src="/img/background-problem.png" alt="bg" class="bg-problem img-problem-desk">
+        <img src="/img/mashine-problem.png" alt="mashine" class="mashine-problem img-problem-desk">
         <div class="container">
+            <!-- <img src="/img/background-problem.png" alt="bg" class="bg-problem img-problem-mobile">
+            <img src="/img/mashine-problem.png" alt="mashine" class="mashine-problem img-problem-mobile"> -->
             <div class="problems-wrapper">
                 <div class="problems-contant">
+                    <img src="/img/bg-row.png" alt="bg" class="img-bg-mobile img-problem-mobile">
+                    <img src="/img/mashine-problem.png" alt="mashine" class="img-mashine-mobile img-problem-mobile">
                     <div class="problems-title-block">
                         <span>Онлайн-диагностика</span>
                         <h2>Какая у вас проблема?</h2>
@@ -638,13 +642,15 @@
     <section class="contacts">
         <div class="container">
             <div class="contacts-wrapper">
+                <h2 class="contacts-title contacts-title-mobile">Контактная информация</h2>
                 <div class="map-location">
-                    <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0dc866042177a7090b17c3ebb2b7236f6afe71dd51729043f093f498847d0530&amp;source=constructor"
-                        width="730" height="580" frameborder="0"></iframe>
+                    <a href="https://yandex.ru/maps/?um=constructor%3A106ac363d677277cc7d4abeb321b16772ea4b3f34976295345731c46977e0003&amp;source=constructorStatic"
+                        target="_blank"><img
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A106ac363d677277cc7d4abeb321b16772ea4b3f34976295345731c46977e0003&amp;width=500&amp;height=400&amp;lang=ru_RU"
+                            alt="" style="border: 0;" /></a>
                 </div>
-                <div class="contacts-info">
-                    <h2 class="contacts-title">Контактная информация</h2>
+                <div class="contacts-info contacts-info-desk">
+                    <h2 class="contacts-title contacts-title-desk">Контактная информация</h2>
                     <div class="contact-info-wrapper">
                         <div class="office">
                             <span class="office-address address">ул. Стрелковая, д. 14 (офис 1)</span>
@@ -660,6 +666,31 @@
                         <button class="contacts-btn">Позвонить</button>
                     </div>
                 </div>
+
+
+                <div class="contacts-info contacts-info-mobile">
+                    <div class="contacts-info-left">
+                        <div class="office">
+                            <span class="office-address address">ул. Стрелковая, д. 14 (офис 1)</span>
+                            <span class="time-work">8:00—21:00 без выходных</span>
+                        </div>
+                        <div class="control-room">
+                            <span class="control-address address">ул. Карла Маркса, д. 33 (диспетчерская)</span>
+                            <span class="time-work">7:00—23:00 без выходных</span>
+                        </div>
+                    </div>
+                    <div class="contacts-info-right">
+                        <div class="email-adress">
+                            iavaisov@gmail.com
+                        </div>
+                        <button class="contacts-btn">Позвонить</button>
+                    </div>
+
+
+                </div>
+
+
+
             </div>
         </div>
     </section>
@@ -704,23 +735,25 @@
             </div>
             <div class="footer-pay">
                 <span>Способы оплаты:</span>
-                <div class="mir logo-card">
-                    <img src="/img/mir.png" alt="logo">
-                </div>
-                <div class="maestro logo-card">
-                    <img src="/img/maestro.png" alt="logo">
-                </div>
-                <div class="visa logo-card">
-                    <img src="/img/visa.png" alt="logo">
-                </div>
-                <div class="apple-pay logo-card">
-                    <img src="/img/apple.png" alt="logo">
-                </div>
-                <div class="google-pay logo-card">
-                    <img src="/img/google-pay.png" alt="logo">
-                </div>
-                <div class="cash logo-card">
-                    <span>Наличные</span>
+                <div class="footer-pay-icon-block">
+                    <div class="mir logo-card">
+                        <img src="/img/mir.png" alt="logo">
+                    </div>
+                    <div class="maestro logo-card">
+                        <img src="/img/maestro.png" alt="logo">
+                    </div>
+                    <div class="visa logo-card">
+                        <img src="/img/visa.png" alt="logo">
+                    </div>
+                    <div class="apple-pay logo-card">
+                        <img src="/img/apple.png" alt="logo">
+                    </div>
+                    <div class="google-pay logo-card">
+                        <img src="/img/google-pay.png" alt="logo">
+                    </div>
+                    <div class="cash logo-card">
+                        <span>Наличные</span>
+                    </div>
                 </div>
 
             </div>
