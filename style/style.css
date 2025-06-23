@@ -11,7 +11,32 @@
     height: 40px;
     /* background: black; */
 }
-
+.burger-menu {
+    display: none;
+}
+.person-photo {
+    width: 100%;
+}
+.overlay {
+    display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 100;
+}
+.connected-modal {
+    display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
 .footer-pay-icon-block {
     display: flex;
 }
@@ -197,6 +222,12 @@
     background: inherit;
     padding: 18px 40px;
     cursor: pointer;
+}
+
+.header-call,
+.header-call-black,
+.contacts-btn {
+    text-decoration: none;
 }
 
 /* header-main */
@@ -618,6 +649,9 @@
     margin-top: 100px;
     padding-bottom: 100px;
 }
+.table-invisible {
+    display: none;
+}
 
 .table td,
 th {
@@ -691,6 +725,20 @@ th {
     cursor: pointer;
 
 }
+.show-less-btn {
+    display: none;
+    align-items: center;
+    border: none;
+    color: rgb(150, 49, 125);
+    font-family: TT Norms;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    gap: 10px;
+    background: inherit;
+    cursor: pointer;
+}
 
 .table .last-td {
     border-bottom: none;
@@ -734,15 +782,15 @@ th {
 }
 
 .personal-wrapper {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .personal-item {
-    display: flex;
-    flex-direction: column;
-    width: calc((100% - 60px) / 3);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: calc((100% - 60px) / 3); */
     border: 1px dashed rgb(189, 189, 189);
     border-radius: 15px;
 
@@ -810,6 +858,11 @@ th {
     gap: 40px;
 }
 
+.arrow-prew,
+.arrow-next {
+    cursor: pointer;
+}
+
 .arrow-prew:hover img {}
 
 .arrow-next:hover img {}
@@ -848,14 +901,14 @@ th {
 }
 
 .reviews-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 30px; */
 
 }
 
 .reviews-item {
-    width: calc((100% - 30px) / 2);
+    /* width: calc((100% - 30px) / 2); */
     min-height: 417px;
     padding: 75px 50px;
     background: rgb(250, 250, 250);
@@ -889,6 +942,11 @@ th {
     line-height: 150%;
     letter-spacing: 0%;
     text-align: left;
+}
+
+.reviews-prev,
+.reviews-next {
+    cursor: pointer;
 }
 
 /* raiting */
@@ -940,7 +998,31 @@ th {
 }
 
 /* questions */
-
+.element-bot {
+    display: none;
+}
+.element-bot p {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius:15px;
+    border-top: none;
+    margin: 0;
+    padding: 18px 68px 18px 35px;
+}
+.element-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px 18px 35px;
+}
+.element-top.active {
+    background-color: rgb(250, 250, 250);
+    border: 1px solid  rgb(190, 190, 190);
+    border-radius: 15px;
+}
+.element-title {
+    font-size: 20px;
+    font-weight: 700;
+}
 .accordion-wrapper {
     display: flex;
     gap: 106px;
@@ -950,6 +1032,7 @@ th {
 
 .accordion {
     flex-grow: 1;
+    
 }
 
 .quest-title {
@@ -957,7 +1040,7 @@ th {
     color: rgb(0, 0, 0);
     font-family: TT Norms;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: left;
@@ -978,11 +1061,11 @@ th {
 }
 
 .element {
-
-    display: flex;
+    cursor: pointer;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 30px 18px 35px;
+    padding: 18px 30px 18px 35px; */
 }
 
 .element-btn {
@@ -993,6 +1076,7 @@ th {
     height: 38px;
     background-color: rgb(150, 49, 125);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* .container {
@@ -1107,6 +1191,18 @@ th {
 .summon-form-1 {
     display: flex;
     gap: 30px;
+}
+
+.modal-summon-content {
+    position: relative;
+}
+
+.connected-modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* contacts */
@@ -1604,6 +1700,10 @@ th {
         font-size: 22px;
         cursor: pointer;
     }
+
+    .contacts-info-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2001,7 +2101,7 @@ th {
     .footer-pay {
         flex-direction: column;
     }
-
+    
 }
 
 @media (max-width: 660px) {
