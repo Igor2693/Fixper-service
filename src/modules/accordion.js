@@ -3,26 +3,26 @@
 const accordion = () => {
     const elementBtn = document.querySelectorAll('.element-btn')
     const accordionWrapper = document.querySelector('.accordion')
-    const elements = document.querySelectorAll('.element-top')
+    const elements = document.querySelectorAll('.element')
     const elementBot = document.querySelectorAll('.element-bot')
 
 
     accordionWrapper.addEventListener('click', (e) => {
-        e.preventDefault() 
-        if(e.target.closest('.element')) {
+        e.preventDefault()
+        if (e.target.closest('.element')) {
             elements.forEach((item, index) => {
-                if(e.target.closest('.element-top') === item) {
+                if (e.target.closest('.element') === item) {
                     item.classList.add('active')
                     elementBot[index].style.display = 'block'
                 } else {
                     item.classList.remove('active')
                     elementBot[index].style.display = 'none'
                 }
-                
+
             })
-            
+
         }
-        
+
     })
 
 
@@ -30,12 +30,12 @@ const accordion = () => {
     // elementBtn.forEach(btn => {
     //     btn.addEventListener('click', (e) => {
     //     e.preventDefault()
-        
-        
+
+
     // })
     // })
-    
-    
+
+
 }
 
 export default accordion

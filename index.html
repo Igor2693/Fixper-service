@@ -7,14 +7,15 @@
     <title>Fixper - ремонт стиральных машин</title>
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="/dist/main.js" defer></script>
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=49320&format=png&color=000000" type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=49320&format=png&color=000000"
+        type="image/x-icon">
 </head>
 
 <body>
 
-    <section class="header">
+    <section class="header" id="header">
         <!-- header-modal-mobile -->
         <div class="header-modal-mobile">
             <div class="modal-mobile-wrapper">
@@ -60,19 +61,19 @@
                 </div>
                 <ul class="header-nav__list">
                     <li class="list-item">
-                        <a href="#" class="list-item__link">Диагностика</a>
+                        <a href="#problem" class="list-item__link diagnostics-link">Диагностика</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-item__link">Стоимость</a>
+                        <a href="#price" class="list-item__link price-link">Стоимость</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-item__link">Мастера</a>
+                        <a href="#masters" class="list-item__link masters-link">Мастера</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-item__link">Отзывы</a>
+                        <a href="#riviews" class="list-item__link riviews-link">Отзывы</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-item__link">Вопросы</a>
+                        <a href="#questions" class="list-item__link questions-link">Вопросы</a>
                     </li>
                 </ul>
                 <div class="header-btn-block">
@@ -143,6 +144,11 @@
                 </div>
             </div>
         </div>
+        <div class="scroll-start">
+            <a href="#header" class="scroll-start-block">
+                <img src="/img/scroll.png" alt="scroll icon" class="scroll-to-start">
+            </a>
+        </div>
     </section>
 
     <!-- main -->
@@ -172,7 +178,7 @@
 
     <!-- problems -->
 
-    <section class="problems">
+    <section class="problems" id="problem">
         <img src="/img/background-problem.png" alt="bg" class="bg-problem img-problem-desk">
         <img src="/img/mashine-problem.png" alt="mashine" class="mashine-problem img-problem-desk">
         <div class="container">
@@ -315,7 +321,7 @@
         </div>
     </section>
 
-    <section class="table-price">
+    <section class="table-price" id="price">
         <div class="container">
             <table class="table">
                 <caption>Стоимость работ</caption>
@@ -352,7 +358,7 @@
 
                 <!-- Покзать все цены -->
 
-                 <tr class="table-invisible">
+                <tr class="table-invisible">
                     <td class="td-name">Диагностика стиральной машины</td>
                     <td></td>
                     <td class="free">Бесплатно</td>
@@ -398,7 +404,7 @@
         </div>
     </section>
 
-    <section class="personal">
+    <section class="personal" id="masters">
         <div class="container">
             <div class="personal-block">
                 <div class="personal-header">
@@ -410,7 +416,7 @@
                     </h2>
                 </div>
                 <div class="swiper swiper-person">
-                     <div class="personal-wrapper swiper-wrapper">
+                    <div class="personal-wrapper swiper-wrapper">
                         <div class="personal-item swiper-slide">
                             <!-- <div class="personal-img"> -->
                             <img src="/img/person-1.png" alt="person photo" class="person-photo">
@@ -623,26 +629,26 @@
                         </div>
                     </div>
                     <div class="person-nav">
-                <div class="dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <div class="arrow-block">
-                    <div class="arrow-prew">
-                        <img src="/img/arrow-next.png" alt="prew" style="transform: rotate(180deg);">
-                        Назад
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="arrow-block">
+                            <div class="arrow-prew">
+                                <img src="/img/arrow-next.png" alt="prew" style="transform: rotate(180deg);">
+                                Назад
+                            </div>
+                            <div class="arrow-next">
+                                Далее
+                                <img src="/img/arrow-next.png" alt="next">
+                            </div>
+                        </div>
                     </div>
-                    <div class="arrow-next">
-                        Далее
-                        <img src="/img/arrow-next.png" alt="next">
-                    </div>
                 </div>
-            </div>
-                </div>
-                   
-                
+
+
             </div>
             <!-- <div class="person-nav">
                 <div class="dots">
@@ -667,7 +673,7 @@
 
     <!-- reviews -->
 
-    <section class="reviews-block">
+    <section class="reviews-block" id="riviews">
         <div class="container">
             <div class="reviews-block-contain">
                 <h2 class="reviews-title">Нас высоко оценивают</h2>
@@ -773,27 +779,27 @@
                             </div>
                         </div>
                     </div>
-                          <div class="person-nav">
-                    <div class="dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="arrow-block">
-                        <div class="reviews-prev">
-                            <img src="/img/arrow-next.png" alt="prew" style="transform: rotate(180deg);">
-                            Назад
+                    <div class="person-nav">
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <div class="reviews-next">
-                            Далее
-                            <img src="/img/arrow-next.png" alt="next">
+                        <div class="arrow-block">
+                            <div class="reviews-prev">
+                                <img src="/img/arrow-next.png" alt="prew" style="transform: rotate(180deg);">
+                                Назад
+                            </div>
+                            <div class="reviews-next">
+                                Далее
+                                <img src="/img/arrow-next.png" alt="next">
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
-          
+
 
             </div>
         </div>
@@ -869,7 +875,7 @@
         </div>
     </section>
 
-    <section class="popular-questions">
+    <section class="popular-questions" id="questions">
         <div class="container">
             <div class="accordion-wrapper">
                 <div class="questions-link">
@@ -883,70 +889,89 @@
                     </p>
                 </div>
                 <div class="accordion">
-                    <div class="element">
-                        <div class="element-top active">
-                            <div class="element-title">
-                                Где почитать отзывы о вас?
-                            </div>
-                            <div class="element-btn">
-                                <img src="/img/plus.png" alt="plus">
-                            </div>
+                    <div class="element active">
+
+                        <div class="element-title">
+                            Где почитать отзывы о вас?
                         </div>
+                        <!-- <div class="element-btn">
+                                <img src="/img/plus.png" alt="plus">
+                            </div> -->
                         <div class="element-bot" style="display: block;">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus nobis debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi perspiciatis obcaecati placeat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus
+                                nobis debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat
+                                error ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod
+                                commodi perspiciatis obcaecati placeat.</p>
                         </div>
+
                     </div>
                     <div class="element">
-                        <div class="element-top">
-                            <div class="element-title">
-                                Сколько времени длится ремонт?
-                            </div>
-                            <div class="element-btn">
+
+                        <div class="element-title">
+                            Сколько времени длится ремонт?
+                        </div>
+                        <!-- <div class="element-btn">
                                 <img src="/img/plus.png" alt="plus">
-                            </div>
-                        </div>
+                            </div> -->
                         <div class="element-bot">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus nobis debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi perspiciatis obcaecati placeat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus
+                                nobis
+                                debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error
+                                ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi
+                                perspiciatis obcaecati placeat.</p>
                         </div>
+
                     </div>
                     <div class="element">
-                        <div class="element-top">
-                            <div class="element-title">
-                                Какие марки стиральный машин вы ремонтируете?
-                            </div>
-                            <div class="element-btn">
+
+                        <div class="element-title">
+                            Какие марки стиральный машин вы ремонтируете?
+                            <!-- <div class="element-btn">
                                 <img src="/img/plus.png" alt="plus">
-                            </div>
+                            </div> -->
                         </div>
                         <div class="element-bot">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus nobis debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi perspiciatis obcaecati placeat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus
+                                nobis
+                                debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error
+                                ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi
+                                perspiciatis obcaecati placeat.</p>
                         </div>
+
                     </div>
                     <div class="element">
-                        <div class="element-top">
-                            <div class="element-title">
-                                Я живу в московской области, сможете приехать?
-                            </div>
-                            <div class="element-btn">
+
+                        <div class="element-title">
+                            Я живу в московской области, сможете приехать?
+                        </div>
+                        <!-- <div class="element-btn">
                                 <img src="/img/plus.png" alt="plus">
-                            </div>
-                        </div>
+                            </div> -->
                         <div class="element-bot">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus nobis debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi perspiciatis obcaecati placeat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus
+                                nobis
+                                debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error
+                                ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi
+                                perspiciatis obcaecati placeat.</p>
                         </div>
+
                     </div>
                     <div class="element">
-                        <div class="element-top">
-                            <div class="element-title">
-                                Как производится контроль качества?
-                            </div>
-                            <div class="element-btn">
+
+                        <div class="element-title">
+                            Как производится контроль качества?
+                        </div>
+                        <!-- <div class="element-btn">
                                 <img src="/img/plus.png" alt="plus">
-                            </div>
-                        </div>
+                            </div> -->
                         <div class="element-bot">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus nobis debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi perspiciatis obcaecati placeat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore ducimus
+                                nobis
+                                debitis reiciendis sunt impedit neque, fuga fugiat molestiae natus ut placeat error
+                                ratione sit dolorem praesentium. Ullam enim sed fugiat rem minus? In quod commodi
+                                perspiciatis obcaecati placeat.</p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -1132,42 +1157,42 @@
     <!-- Модальное окно header-nav -->
 
     <div class="burger-menu is-open"">
-        <div class="header-nav-mobile" style="display: flex;">
-            <div class="btn-close">
-                <img src="/img/icon-close.png" alt="close">
-            </div>
-            <div class="header-logo">
-                <img src="/img/logo.png" alt="logo">
-                <span class="logo-name-black"> Fixper</span>
-            </div>
-            <div class="header-btn-block">
-                <button class="location">
-                    <img src="/img/geo.png" alt="geo">
-                    <span>Москва</span>
-                </button>
-                <a href="tel:1234567890" class="header-call-black">Позвонить</a>
-            </div>
+        <div class=" header-nav-mobile" style="display: flex;">
+        <div class="btn-close">
+            <img src="/img/icon-close.png" alt="close">
         </div>
-        <div class="menu-container">
-            <ul class="menu-list-mobile">
-                <li class="list-mobile">
-                    <a href="#" class="list-mobile__link">Диагностика</a>
-                </li>
-                <li class="list-mobile">
-                    <a href="#" class="list-mobile__link">Стоимость</a>
-                </li>
-                <li class="list-mobile">
-                    <a href="#" class="list-mobile__link">Мастера</a>
-                </li>
-                <li class="list-mobile">
-                    <a href="#" class="list-mobile__link">Отзывы</a>
-                </li>
-                <li class="list-mobile">
-                    <a href="#" class="list-mobile__link">Вопросы</a>
-                </li>
-            </ul>
+        <div class="header-logo">
+            <img src="/img/logo.png" alt="logo">
+            <span class="logo-name-black"> Fixper</span>
+        </div>
+        <div class="header-btn-block">
+            <button class="location">
+                <img src="/img/geo.png" alt="geo">
+                <span>Москва</span>
+            </button>
+            <a href="tel:1234567890" class="header-call-black">Позвонить</a>
+        </div>
+    </div>
+    <div class="menu-container">
+        <ul class="menu-list-mobile">
+            <li class="list-mobile">
+                <a href="#" class="list-mobile__link">Диагностика</a>
+            </li>
+            <li class="list-mobile">
+                <a href="#" class="list-mobile__link">Стоимость</a>
+            </li>
+            <li class="list-mobile">
+                <a href="#" class="list-mobile__link">Мастера</a>
+            </li>
+            <li class="list-mobile">
+                <a href="#" class="list-mobile__link">Отзывы</a>
+            </li>
+            <li class="list-mobile">
+                <a href="#" class="list-mobile__link">Вопросы</a>
+            </li>
+        </ul>
 
-        </div>
+    </div>
     </div>
 
 

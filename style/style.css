@@ -11,32 +11,37 @@
     height: 40px;
     /* background: black; */
 }
+
 .burger-menu {
     display: none;
 }
+
 .person-photo {
     width: 100%;
 }
+
 .overlay {
     display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 100;
 }
+
 .connected-modal {
     display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }
+
 .footer-pay-icon-block {
     display: flex;
 }
@@ -310,6 +315,17 @@
     cursor: pointer;
 }
 
+.scroll-start {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
 /* header-modal */
 
 .header-modal {
@@ -523,7 +539,9 @@
 /* блок при клике проблемы */
 
 .open-problem {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .chose-other-problem img {
@@ -649,6 +667,7 @@
     margin-top: 100px;
     padding-bottom: 100px;
 }
+
 .table-invisible {
     display: none;
 }
@@ -723,8 +742,10 @@ th {
     gap: 10px;
     background: inherit;
     cursor: pointer;
+    transition: all 200ms ease-out;
 
 }
+
 .show-less-btn {
     display: none;
     align-items: center;
@@ -738,6 +759,7 @@ th {
     gap: 10px;
     background: inherit;
     cursor: pointer;
+    transition: all 200ms ease-out;
 }
 
 .table .last-td {
@@ -998,31 +1020,77 @@ th {
 }
 
 /* questions */
+
+
 .element-bot {
     display: none;
 }
+
 .element-bot p {
-    border: 1px solid rgb(190, 190, 190);
-    border-radius:15px;
+    /* border: 1px solid rgb(190, 190, 190);
+    border-radius: 15px; */
     border-top: none;
     margin: 0;
-    padding: 18px 68px 18px 35px;
+    padding: 18px 68px 18px 20px;
 }
-.element-top {
+
+.element {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 18px 30px 18px 35px;
+    margin-bottom: 5px;
+    border: 1px solid #38383833;
+    /* align-items: center; */
+    /* padding: 18px 30px 18px 35px; */
+    /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); */
 }
-.element-top.active {
-    background-color: rgb(250, 250, 250);
-    border: 1px solid  rgb(190, 190, 190);
-    border-radius: 15px;
+
+.element.active {
+    /* background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 15px; */
 }
+
 .element-title {
+    position: relative;
     font-size: 20px;
     font-weight: 700;
+    padding: 18px 30px 18px 20px;
+    transition: all 200ms ease-out;
+    /* background-color: black; */
 }
+
+.element.active .element-title {
+    background: rgb(255, 174, 234);
+    /* border-radius: 15px; */
+    border: none;
+}
+
+.element-title:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url(../img/plus.png) 50% 50% no-repeat #383838;
+    transition: all 200ms ease-out;
+    /* color: black; */
+}
+
+.element.active .element-title:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url(../img/minus.png) 50% 50% no-repeat #383838;
+    /* color: black; */
+}
+
 .accordion-wrapper {
     display: flex;
     gap: 106px;
@@ -1032,7 +1100,7 @@ th {
 
 .accordion {
     flex-grow: 1;
-    
+
 }
 
 .quest-title {
@@ -1069,6 +1137,7 @@ th {
 }
 
 .element-btn {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1077,6 +1146,8 @@ th {
     background-color: rgb(150, 49, 125);
     border-radius: 50%;
     cursor: pointer;
+    top: 0;
+    right: 0;
 }
 
 /* .container {
@@ -1195,6 +1266,17 @@ th {
 
 .modal-summon-content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-summon-content .summon-title {
+    margin: 0;
+    text-align: center;
+}
+
+.modal-summon-content .summon-text {
+    text-align: center;
 }
 
 .connected-modal-close {
@@ -2101,7 +2183,7 @@ th {
     .footer-pay {
         flex-direction: column;
     }
-    
+
 }
 
 @media (max-width: 660px) {

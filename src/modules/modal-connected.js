@@ -5,6 +5,13 @@ const modalConnected = () => {
     const overlay = document.querySelector('.overlay')
     const connectedModal = document.querySelector('.connected-modal')
     const closeConnectedBtn = document.querySelector('.connected-modal-close')
+    const btnProblem = document.querySelector('.open-problem-button')
+
+
+    const modalOn = () => {
+        overlay.style.display = 'block'
+        connectedModal.style.display = 'block'
+    }
 
     const modalOff = () => {
         overlay.style.display = 'none'
@@ -12,8 +19,7 @@ const modalConnected = () => {
     }
 
     modalConnectedBtn.addEventListener('click', () => {
-        overlay.style.display = 'block'
-        connectedModal.style.display = 'block'
+        modalOn()
     })
 
     closeConnectedBtn.addEventListener('click', () => {
@@ -22,7 +28,11 @@ const modalConnected = () => {
 
     overlay.addEventListener('click', () => {
         modalOff()
-    })   
+    })
+
+    btnProblem.addEventListener('click', () => {
+        modalOn()
+    })
 }
 
 export default modalConnected
