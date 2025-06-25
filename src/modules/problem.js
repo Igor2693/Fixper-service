@@ -12,7 +12,7 @@ const problemBlock = () => {
         item.addEventListener('click', (e) => {
             e.preventDefault()
             if (e.target == item) {
-                openProblem.style.opacity = 1
+                openProblem.style.display = 'block'
                 problemsContant.style.display = 'none'
             }
         })
@@ -23,7 +23,7 @@ const problemBlock = () => {
         console.log(e.target);
 
         if (e.target.closest('a') || e.target.closest('img')) {
-            openProblem.style.opacity = 0
+            openProblem.style.display = 'none'
             problemsContant.style.display = 'block'
 
         }

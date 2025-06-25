@@ -6,6 +6,8 @@ import accordion from "./modules/accordion";
 import reg from "./modules/reg";
 import showTable from "./modules/table";
 import scroll from "./modules/scroll";
+import headerModal from "./modules/header-modal";
+import timer from "./modules/timer";
 
 slider()
 mobileMenu()
@@ -15,3 +17,5 @@ accordion()
 reg()
 showTable()
 scroll()
+headerModal()
+timer()

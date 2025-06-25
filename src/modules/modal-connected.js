@@ -6,6 +6,8 @@ const modalConnected = () => {
     const connectedModal = document.querySelector('.connected-modal')
     const closeConnectedBtn = document.querySelector('.connected-modal-close')
     const btnProblem = document.querySelector('.open-problem-button')
+    const problemButton = document.querySelector('.open-problem-button')
+    const questSubtitle = document.querySelector('.quest-subtitle')
 
 
     const modalOn = () => {
@@ -33,6 +35,14 @@ const modalConnected = () => {
     btnProblem.addEventListener('click', () => {
         modalOn()
     })
+    problemButton.addEventListener('click', () => {
+        modalOn()
+    })
+
+    questSubtitle.addEventListener('click', () => {
+        modalOn()
+    })
+
 }
 
 export default modalConnected

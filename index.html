@@ -20,10 +20,10 @@
         <div class="header-modal-mobile">
             <div class="modal-mobile-wrapper">
                 <div class="modal-block-close">
-                    <img src="/img/close.svg" alt="close-icon">
+                    <img src="/img/close.svg" alt="close-icon" class="header-modal-close">
                 </div>
                 <div class="modal-info">
-                    <img src="/img/circle.svg" alt="circle-icon">
+                    <img src="/img/circle.svg" alt="circle-icon" class="blink-img">
                     <p class="modal-text modal-text-desktop">
                         <span>Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку
                         15%
@@ -39,7 +39,7 @@
                     </a>
                 </div>
                 <div class="modal-link modal-link-smallscreen">
-                    <a href="#">Получить скидку 15%</a>
+                    <a href="tel:1324567890">Получить скидку 15%</a>
                     <a href="#">
                         <img src="/img/arrow.svg" alt="arrow">
                     </a>
@@ -117,10 +117,10 @@
 
                 <div class="header-modal">
                     <div class="modal-block-close">
-                        <img src="/img/close.svg" alt="close-icon">
+                        <img src="/img/close.svg" alt="close-icon" class="header-modal-close">
                     </div>
                     <div class="modal-info">
-                        <img src="/img/circle.svg" alt="circle-icon">
+                        <img src="/img/circle.svg" alt="circle-icon" class="blink-img">
                         <p class="modal-text modal-text-desktop">
                             <span>Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы сделаем скидку
                             15%
@@ -130,13 +130,13 @@
                         </p>
                     </div>
                     <div class="modal-link modal-link-desktop">
-                        <a href="#">Получить скидку</a>
-                        <a href="#">
-                            <img src="/img/arrow.svg" alt="arrow">
-                        </a>
+                        <a href="tel:1324567890">Получить скидку</a>
+
+                        <img src="/img/arrow.svg" alt="arrow">
+
                     </div>
                     <div class="modal-link modal-link-smallscreen">
-                        <a href="#">Получить скидку 15%</a>
+                        <a href="tel:1324567890">Получить скидку 15%</a>
                         <a href="#">
                             <img src="/img/arrow.svg" alt="arrow">
                         </a>
@@ -172,6 +172,24 @@
                     <img src="/img/man.png" alt="man icon" class="advantages-img man">
                     <p class="advantages-text">Квалифицированные и опытные мастера</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- timer -->
+
+    <section id="timer">
+        <div class="container">
+            <h2 class="timer-title">Специальное предложение:</h2>
+            <p class="timer-subtitle">успейте оставить заявку и платите только за запчасти!</p>
+            <div class="timer-numbers">
+                <span class="timer-days">00</span>
+                <span>:</span>
+                <span class="timer-hours">00</span>
+                <span>:</span>
+                <span class="timer-minutes">00</span>
+                <span>:</span>
+                <span class="timer-seconds">00</span>
             </div>
         </div>
     </section>
@@ -882,9 +900,9 @@
                     <h2 class="quest-title">Часто задаваемые вопросы</h2>
                     <p class="quest-subtitle">
                         Не нашли ответ на свой вопрос?
-                        <a href="#">
+                        <span>
                             Оставьте заявку
-                        </a>
+                        </span>
                         и наш специалист свяжется и ответит на ваш вопрос
                     </p>
                 </div>
@@ -1004,7 +1022,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="map">
         <div class="container">
             <div class="contacts-wrapper">
                 <h2 class="contacts-title contacts-title-mobile">Контактная информация</h2>
@@ -1073,22 +1091,22 @@
                     <nav class="footer-nav">
                         <ul class="footer-nav-list">
                             <li class="footer-nav-item">
-                                <a href="" class="footer-nav-link">Диагностика</a>
+                                <a href="#problem" class="footer-nav-link">Диагностика</a>
                             </li>
                             <li class="footer-nav-item">
-                                <a href="" class="footer-nav-link">Стоимость</a>
+                                <a href="#price" class="footer-nav-link">Стоимость</a>
                             </li>
                             <li class="footer-nav-item">
-                                <a href="" class="footer-nav-link">Мастера</a>
+                                <a href="#masters" class="footer-nav-link">Мастера</a>
                             </li>
                             <li class="footer-nav-item">
-                                <a href="" class="footer-nav-link">Отзывы</a>
+                                <a href="#riviews" class="footer-nav-link">Отзывы</a>
                             </li>
                             <li class="footer-nav-item">
-                                <a href="" class="footer-nav-link">Вопросы</a>
+                                <a href="#questions" class="footer-nav-link">Вопросы</a>
                             </li>
                             <li class="footer-nav-item">
-                                <a href="" class="footer-nav-link">Карта сайта</a>
+                                <a href="#map" class="footer-nav-link">Карта сайта</a>
                             </li>
                         </ul>
                     </nav>
@@ -1135,7 +1153,7 @@
         <div class="connected-wrapper">
             <div class="summon-content modal-summon-content">
                 <span class="modal-block-close connected-modal-close">
-                    <img src="/img/close.svg" alt="close icon">
+                    <img src="/img/close-modal.png" alt="close icon">
                 </span>
                 <div class="summon-text">
                     <h2 class="summon-title">Вызов мастера</h2>
@@ -1176,19 +1194,19 @@
     <div class="menu-container">
         <ul class="menu-list-mobile">
             <li class="list-mobile">
-                <a href="#" class="list-mobile__link">Диагностика</a>
+                <a href="#problem" class="list-mobile__link">Диагностика</a>
             </li>
             <li class="list-mobile">
-                <a href="#" class="list-mobile__link">Стоимость</a>
+                <a href="#price" class="list-mobile__link">Стоимость</a>
             </li>
             <li class="list-mobile">
-                <a href="#" class="list-mobile__link">Мастера</a>
+                <a href="#masters" class="list-mobile__link">Мастера</a>
             </li>
             <li class="list-mobile">
-                <a href="#" class="list-mobile__link">Отзывы</a>
+                <a href="#riviews" class="list-mobile__link">Отзывы</a>
             </li>
             <li class="list-mobile">
-                <a href="#" class="list-mobile__link">Вопросы</a>
+                <a href="#questions" class="list-mobile__link">Вопросы</a>
             </li>
         </ul>
 

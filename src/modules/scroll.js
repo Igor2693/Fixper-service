@@ -2,6 +2,8 @@
 
 const scroll = () => {
     const navList = document.querySelector('.header-nav__list')
+    const footerNavList = document.querySelector('.footer-nav-list')
+
     const scrollToStart = document.querySelector('.scroll-to-start')
     const problemsSection = document.querySelector('.problems')
 
@@ -14,6 +16,18 @@ const scroll = () => {
         })
 
     })
+
+    footerNavList.addEventListener('click', (e) => {
+        e.preventDefault()
+        const block = e.target.getAttribute('href').substr(1)
+        document.getElementById(block).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+
+    })
+
+
 
     scrollToStart.addEventListener('click', (e) => {
         e.preventDefault()
