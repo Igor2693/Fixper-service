@@ -1,6 +1,6 @@
 'use strict'
 
-const timer = () => {
+const timer = (x) => {
     const timerDays = document.querySelector('.timer-days')
     const timerHours = document.querySelector('.timer-hours')
     const timerMinutes = document.querySelector('.timer-minutes')
@@ -9,7 +9,7 @@ const timer = () => {
 
     const date = () => {
         const dateNow = new Date().getTime()
-        const dateEnd = new Date('27 June 2025').getTime()
+        const dateEnd = new Date(x).getTime()
         const deadline = Math.floor((dateEnd - dateNow) / 1000)
 
         let seconds = deadline % 60
