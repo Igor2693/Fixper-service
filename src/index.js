@@ -8,6 +8,7 @@ import showTable from "./modules/table";
 import scroll from "./modules/scroll";
 import headerModal from "./modules/header-modal";
 import timer from "./modules/timer";
+import cardPersonalRender from "./modules/card-personal";
 
 slider()
 mobileMenu()
@@ -18,4 +19,5 @@ reg()
 showTable()
 scroll()
 headerModal()
-timer('27 June 2025')
+timer('28 June 2025')
+cardPersonalRender()
