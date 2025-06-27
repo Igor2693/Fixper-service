@@ -2370,7 +2370,9 @@ th {
     .problems-title-block {
         margin-bottom: 450px;
     }
-
+    .table td {
+        font-size: 14px;
+    }
     .table caption {
         font-size: 38px;
     }
@@ -2379,13 +2381,20 @@ th {
         font-size: 38px;
     }
 
+    /* .person-nav {
+        margin-top: 0;
+    } */
+
     .element-title {
-        max-width: 250px;
+        max-width: 100%;
+        padding-right: 50px;
+        padding-left: 10px;
+        font-size: 16px;
     }
 
-    .element {
+    /* .element {
         padding: 0 0 0 10px;
-    }
+    } */
 
     .contacts-title-mobile {
         text-align: center;
