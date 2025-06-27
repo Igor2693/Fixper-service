@@ -1,0 +1,83 @@
+[
+    {
+        "photo": "img/personal-photos/pers-1.png",
+        "name": "Александр Семенов",
+        "position": "сантехник",
+        "workResult": "348 проделанных работ",
+        "experience": "3 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.5"
+    },
+    {
+        "photo": "img/personal-photos/pers-2.png",
+        "name": "Игорь Попов",
+        "position": "прораб",
+        "workResult": "584 проделанных работ",
+        "experience": "8 лет в Fixper",
+        "raiting": "Рейтинг Fixper 4.8"
+    },
+    {
+        "photo": "img/personal-photos/pers-3.png",
+        "name": "Николай Рычкин",
+        "position": "работник",
+        "workResult": "123 проделанных работ",
+        "experience": "2 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.6"
+    },
+    {
+        "photo": "img/personal-photos/pers-4.png",
+        "name": "Александр Шевляков",
+        "position": "работник",
+        "workResult": "256 проделанных работ",
+        "experience": "3 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.5"
+    },
+    {
+        "photo": "img/personal-photos/pers-5.png",
+        "name": "Василий",
+        "position": "работник",
+        "workResult": "256 проделанных работ",
+        "experience": "3 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.5"
+    },
+    {
+        "photo": "img/personal-photos/pers-1.png",
+        "name": "Александр Семенов",
+        "position": "сантехник",
+        "workResult": "348 проделанных работ",
+        "experience": "3 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.5"
+    },
+    {
+        "photo": "img/personal-photos/pers-2.png",
+        "name": "Игорь Попов",
+        "position": "прораб",
+        "workResult": "584 проделанных работ",
+        "experience": "8 лет в Fixper",
+        "raiting": "Рейтинг Fixper 4.8"
+    },
+    {
+        "photo": "img/personal-photos/pers-3.png",
+        "name": "Николай Рычкин",
+        "position": "работник",
+        "workResult": "123 проделанных работ",
+        "experience": "2 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.6"
+    },
+    {
+        "photo": "img/personal-photos/pers-4.png",
+        "name": "Александр Шевляков",
+        "position": "работник",
+        "workResult": "256 проделанных работ",
+        "experience": "3 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.5"
+    },
+    {
+        "photo": "img/personal-photos/pers-5.png",
+        "name": "Вин Дизель",
+        "position": "работник",
+        "workResult": "256 проделанных работ",
+        "experience": "3 года в Fixper",
+        "raiting": "Рейтинг Fixper 4.5"
+    }
+   
+]
